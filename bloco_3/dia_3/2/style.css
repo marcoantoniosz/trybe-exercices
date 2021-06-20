@@ -2,15 +2,16 @@
     width: 200px;
     position: absolute;
     top: 50px;
-    z-index: 2;
+    z-index: 1;
   }
   
   .goomba {
     width: 100px;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 350px;
     left: 50px;
+    float: inline-start;
   }
   
   .baloon {
