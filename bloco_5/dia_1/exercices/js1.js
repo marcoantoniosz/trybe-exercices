@@ -7,6 +7,9 @@ const quadroAm = document.getElementsByClassName("main-content")[0];
 const quadroVr = document.getElementsByClassName("center-content")[0];
 	quadroVr.style.backgroundColor = "white";
 
+const titulo = document.getElementsByClassName("title")[0];
+	titulo.innerText = "Exercício 5.1 - JavaScript";
+
 
 
 
@@ -31,7 +34,6 @@ const quadroVr = document.getElementsByClassName("center-content")[0];
         - document.getElementById()
         - document.getElementsByClassName()
         - document.getElementsByTagName()
-        3. Crie uma função que mude a cor do quadrado vermelho para branco.
         4. Crie uma função que corrija o texto da tag <h1>.
         5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
         6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
