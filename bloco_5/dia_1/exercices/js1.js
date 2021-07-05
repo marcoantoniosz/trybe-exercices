@@ -12,32 +12,4 @@ const titulo = document.getElementsByClassName("title")[0];
 
 paragrafo.style.textTransform = "uppercase";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /*
-        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
-        - document.getElementById()
-        - document.getElementsByClassName()
-        - document.getElementsByTagName()
-  
-        5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-        6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-        */
+console.log(document.getElementsByTagName("p"));
