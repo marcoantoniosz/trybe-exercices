@@ -4,11 +4,22 @@ const thirdDiv = document.getElementById('third-div');
 const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
 
-/*
-1. Copie esse arquivo e edite apenas ele;
 
-2. Crie uma função que adicione a classe 'tech' ao elemento selecionado;
-2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
+firstDiv.addEventListener('click', mudaClasse);
+secondDiv.addEventListener('click', mudaClasse);
+thirdDiv.addEventListener('click', mudaClasse);
+input.addEventListener('')
+
+function mudaClasse(evento) {
+  firstDiv.classList.remove('tech');
+  secondDiv.classList.remove('tech');
+  thirdDiv.classList.remove('tech');
+  evento.target.className = 'tech';
+}
+
+
+
+/*
 
 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 com a classe 'tech';
