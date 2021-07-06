@@ -12,7 +12,16 @@ secondDiv.addEventListener('click', mudaClasse);
 thirdDiv.addEventListener('click', mudaClasse);
 input.addEventListener('change', mudaTexto);
 top3.addEventListener('dblclick', redireciona);
+top3.addEventListener('mouseover', mudaCor);
+top3.addEventListener('mouseout', voltaCor)
 
+function voltaCor () {
+  top3.style.color = 'black';
+}
+
+function mudaCor (){
+  top3.style.color = 'blue';
+}
 
 function redireciona(){
   window.location.href = 'http://marcoantoniosz.github.io'
@@ -30,29 +39,3 @@ function mudaClasse(evento) {
   thirdDiv.className = 'vazio';
   evento.target.className = 'tech';
 }
-
-
-
-/*
-
-4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
-redirecione para alguma página;
-4.1. Que tal redirecionar para seu portifólio?
-
-5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
-a cor do mesmo;
-
-Segue abaixo um exemplo do uso de event.target:
-*/
-
-function resetText(event) {
-  // O Event é passado como um parâmetro para a função.
-  event.target.innerText = 'Opção reiniciada';
-  // O event possui várias propriedades, porém a mais usada é o event.target,
-  // que retorna o objeto que disparou o evento.
-}
-
-firstDiv.addEventListener('dblclick', resetText);
-// Não precisa passar o parâmetro dentro do addEventListener. O próprio
-// navegador fará esse trabalho por você, não é legal? Desse jeito, o
-// event.target na nossa função retornará o objeto 'divUm'.
