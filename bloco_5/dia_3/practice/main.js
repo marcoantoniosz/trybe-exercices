@@ -5,17 +5,23 @@ const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
 const techAtual = document.getElementsByClassName('tech');
 const but = document.getElementById('but');
-
+const top3 = document.getElementById('my-spotrybefy');
 
 firstDiv.addEventListener('click', mudaClasse);
 secondDiv.addEventListener('click', mudaClasse);
 thirdDiv.addEventListener('click', mudaClasse);
 input.addEventListener('change', mudaTexto);
+top3.addEventListener('dblclick', redireciona);
 
 
+function redireciona(){
+  window.location.href = 'http://marcoantoniosz.github.io'
+}
 
 function mudaTexto () {
+  if (input.value !== '') {
   techAtual[0].innerText = input.value;
+  }
 }
 
 function mudaClasse(evento) {
@@ -28,9 +34,6 @@ function mudaClasse(evento) {
 
 
 /*
-
-3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
-com a classe 'tech';
 
 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 redirecione para alguma página;
