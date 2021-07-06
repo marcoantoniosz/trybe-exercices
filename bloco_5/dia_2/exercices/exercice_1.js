@@ -8,3 +8,8 @@ const newMainDiv = document.createElement('div');
 newMainDiv.className = 'main-content';
 masterBody.appendChild(newMainDiv);
 
+const centerContent = document.createElement('div');
+centerContent.className = 'center-content';
+newMainDiv.appendChild(centerContent);
+
+
