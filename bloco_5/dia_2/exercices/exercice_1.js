@@ -12,6 +12,11 @@ const newLeftDiv = document.createElement('div');
 newLeftDiv.className = 'left-content';
 newMainDiv.appendChild(newLeftDiv);
 
+const newLeftImage = document.createElement('img');
+newLeftImage.src = 'https://picsum.photos/200';
+newLeftImage.className = 'small-image'
+newLeftDiv.appendChild(newLeftImage);
+
 const newRightDiv = document.createElement('div');
 newRightDiv.className = 'right-content';
 newMainDiv.appendChild(newRightDiv);
