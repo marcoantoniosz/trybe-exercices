@@ -8,6 +8,12 @@ const newMainDiv = document.createElement('div');
 newMainDiv.className = 'main-content';
 masterBody.appendChild(newMainDiv);
 
+for (let i = 1; i <= 3; i += 1) {
+  let mainDivs = document.createElement('div');
+  mainDivs.className = 'main-divs';
+  newMainDiv.appendChild(mainDivs);
+}
+
 const newLeftDiv = document.createElement('div');
 newLeftDiv.className = 'left-content';
 newMainDiv.appendChild(newLeftDiv);
