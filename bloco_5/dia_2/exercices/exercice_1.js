@@ -10,7 +10,7 @@ masterBody.appendChild(newMainDiv);
 
 for (let i = 1; i <= 3; i += 1) {
   let mainDivs = document.createElement('div');
-  mainDivs.className = 'main-divs';
+  mainDivs.className = 'description';
   newMainDiv.appendChild(mainDivs);
 }
 
@@ -26,6 +26,7 @@ newLeftDiv.appendChild(newLeftImage);
 const newRightDiv = document.createElement('div');
 newRightDiv.className = 'right-content';
 newMainDiv.appendChild(newRightDiv);
+newRightDiv.style.marginRight = 'auto';
 
 const newUl = document.createElement('ul');
 newUl.className = 'newCUl';
@@ -46,6 +47,25 @@ const newParagraph = document.createElement('p');
 newParagraph.className = 'main-paragraph-1';
 newParagraph.innerText = 'Final Fantasy XIV (ファイナルファンタジーXIV Fainaru Fantajī Fōtīn?), também chamado de Final Fantasy XIV Online, é um jogo eletrônico MMORPG desenvolvido pela Square Enix exclusivamente para Microsoft Windows. É o décimo quarto jogo principal da série Final Fantasy e o segundo MMORPG da franquia após Final Fantasy XI. Ele se passa em Eorzea e os jogadores assumem o controle de um avatar customizável enquanto exploram o mundo, sendo pegos tanto na invasão do Império Garleano quanto na ameaça dos Primals, divindades das tribos locais. Eventualmente eles se envolvem em um complô de um legato garleano para destruir os Primals ao colidir um dos satélites naturais do planeta com Eorzea.'
 newCenterContent.appendChild(newParagraph);
+
+newMainDiv.removeChild(newLeftDiv);
+
+newCenterContent.style.backgroundColor = 'green';
+
+
+const rmUl = document.querySelector('.newCul');
+const rmLi = document.querySelector(".list-item")
+
+
+for (let i = 0; i < rmUl.length; i += 1) {
+  if (i === 8 || i === 9) {
+    rmUl.removeChild()
+  }
+
+}
+
+
+
 
 
 
