@@ -3,12 +3,20 @@ const secondDiv = document.getElementById('second-div');
 const thirdDiv = document.getElementById('third-div');
 const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
-let techAtual = document.getElementsByClassName('tech')[0];
+const techAtual = document.getElementsByClassName('tech');
+const but = document.getElementById('but');
 
 
 firstDiv.addEventListener('click', mudaClasse);
 secondDiv.addEventListener('click', mudaClasse);
 thirdDiv.addEventListener('click', mudaClasse);
+input.addEventListener('change', mudaTexto);
+
+
+
+function mudaTexto () {
+  techAtual[0].innerText = input.value;
+}
 
 function mudaClasse(evento) {
   firstDiv.className = 'vazio';
