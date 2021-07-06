@@ -12,6 +12,10 @@ const newLeftDiv = document.createElement('div');
 newLeftDiv.className = 'left-content';
 newMainDiv.appendChild(newLeftDiv);
 
+const newRightDiv = document.createElement('div');
+newRightDiv.className = 'right-content';
+newMainDiv.appendChild(newRightDiv);
+
 const newCenterContent = document.createElement('div');
 newCenterContent.className = 'center-content';
 newMainDiv.appendChild(newCenterContent);
