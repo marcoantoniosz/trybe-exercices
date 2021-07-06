@@ -21,6 +21,17 @@ const newRightDiv = document.createElement('div');
 newRightDiv.className = 'right-content';
 newMainDiv.appendChild(newRightDiv);
 
+const newUl = document.createElement('ul');
+newUl.className = 'newCUl';
+newRightDiv.appendChild(newUl);
+
+for(let i = 1; i <= 10; i += 1) {
+  let criaLis = document.createElement('li');
+  criaLis.className = 'list-item';
+  criaLis.innerText = i;
+  newUl.appendChild(criaLis);
+}
+
 const newCenterContent = document.createElement('div');
 newCenterContent.className = 'center-content';
 newMainDiv.appendChild(newCenterContent);
