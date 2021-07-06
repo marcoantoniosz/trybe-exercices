@@ -3,17 +3,17 @@ const secondDiv = document.getElementById('second-div');
 const thirdDiv = document.getElementById('third-div');
 const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
+let techAtual = document.getElementsByClassName('tech')[0];
 
 
 firstDiv.addEventListener('click', mudaClasse);
 secondDiv.addEventListener('click', mudaClasse);
 thirdDiv.addEventListener('click', mudaClasse);
-input.addEventListener('')
 
 function mudaClasse(evento) {
-  firstDiv.classList.remove('tech');
-  secondDiv.classList.remove('tech');
-  thirdDiv.classList.remove('tech');
+  firstDiv.className = 'vazio';
+  secondDiv.className = 'vazio';
+  thirdDiv.className = 'vazio';
   evento.target.className = 'tech';
 }
 
