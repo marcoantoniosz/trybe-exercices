@@ -61,3 +61,14 @@ function mudaCor ()  {
   };
 };
 
+
+function createButton2 (Sextas) {
+  const maeBotao = document.querySelector('.buttons-container');
+  const criaBotao = document.createElement('button');
+  criaBotao.innerText = 'Sexta-Feira';
+  criaBotao.id = 'btn-friday';
+  maeBotao.appendChild(criaBotao);
+}
+
+createButton2();
+
