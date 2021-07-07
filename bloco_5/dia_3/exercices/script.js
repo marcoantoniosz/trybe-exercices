@@ -36,3 +36,13 @@ function createDayz(){
 };
 
 createDayz();
+
+function createButton (Feriados) {
+  const maeBotao = document.querySelector('.buttons-container');
+  const criaBotao = document.createElement('button');
+  criaBotao.innerText = 'Feriados';
+  criaBotao.id = 'btn-holiday';
+  maeBotao.appendChild(criaBotao);
+}
+
+createButton();
