@@ -53,10 +53,10 @@ botaoFeriados.addEventListener('click', mudaCor)
 
 function mudaCor ()  {
   for (let i = 0; i < arrayFeriados.length; i += 1) {
-    if (arrayFeriados[i].style.backgroundColor !== 'pink'){
+    if (arrayFeriados[i].style.backgroundColor === ''){
     arrayFeriados[i].style.backgroundColor = 'pink';
     } else {
-      arrayFeriados[i].style.backgroundColor = 'rgb(238,238,238)';
+      arrayFeriados[i].style.backgroundColor = '';
     }
   };
 };
@@ -72,3 +72,18 @@ function createButton2 (Sextas) {
 
 createButton2();
 
+const arraySextas = document.getElementsByClassName('friday');
+const botaoSextas = document.getElementById('btn-friday');
+botaoSextas.addEventListener('click', mudaTexto)
+
+function mudaTexto () {
+  for (let i = 0; i < arraySextas.length; i += 1) {
+    if (arraySextas[i].style.backgroundColor !== 'yellow'){
+      arraySextas[i].style.backgroundColor = 'yellow';
+      arraySextas[i].innerHTML = 'SEXTOU!';
+      } else {
+        arraySextas[i].style.backgroundColor = '';
+        arraySextas[i].innerHTML = arraySextas[i];
+      }
+  }
+}
