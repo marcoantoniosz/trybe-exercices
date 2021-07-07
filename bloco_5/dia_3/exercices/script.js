@@ -46,3 +46,18 @@ function createButton (Feriados) {
 }
 
 createButton();
+
+const arrayFeriados = document.getElementsByClassName('holiday');
+const botaoFeriados = document.getElementById('btn-holiday');
+botaoFeriados.addEventListener('click', mudaCor)
+
+function mudaCor ()  {
+  for (let i = 0; i < arrayFeriados.length; i += 1) {
+    if (arrayFeriados[i].style.backgroundColor !== 'pink'){
+    arrayFeriados[i].style.backgroundColor = 'pink';
+    } else {
+      arrayFeriados[i].style.backgroundColor = 'rgb(238,238,238)';
+    }
+  };
+};
+
