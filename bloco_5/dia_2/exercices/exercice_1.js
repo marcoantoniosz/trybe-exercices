@@ -1,10 +1,10 @@
-const newTitle = document.createElement('h1');
-const masterBody = document.getElementsByTagName('body')[0];
+let newTitle = document.createElement('h1');
+let masterBody = document.getElementsByTagName('body')[0];
 newTitle.className = 'title';
 newTitle.innerText = 'Exercício 5.2 - JavaScript DOM';
 masterBody.appendChild(newTitle)
 
-const newMainDiv = document.createElement('div');
+let newMainDiv = document.createElement('div');
 newMainDiv.className = 'main-content';
 masterBody.appendChild(newMainDiv);
 
@@ -14,22 +14,22 @@ for (let i = 1; i <= 3; i += 1) {
   newMainDiv.appendChild(mainDivs);
 }
 
-const newLeftDiv = document.createElement('div');
+let newLeftDiv = document.createElement('div');
 newLeftDiv.className = 'left-content';
 newMainDiv.appendChild(newLeftDiv);
 
-const newLeftImage = document.createElement('img');
+let newLeftImage = document.createElement('img');
 newLeftImage.src = 'https://picsum.photos/200';
 newLeftImage.className = 'small-image'
 newLeftDiv.appendChild(newLeftImage);
 
-const newRightDiv = document.createElement('div');
+let newRightDiv = document.createElement('div');
 newRightDiv.className = 'right-content';
 newMainDiv.appendChild(newRightDiv);
 newRightDiv.style.marginRight = 'auto';
 
-const newUl = document.createElement('ul');
-newUl.className = 'newCUl';
+let newUl = document.createElement('ul');
+newUl.id = 'unLi';
 newRightDiv.appendChild(newUl);
 
 for(let i = 1; i <= 10; i += 1) {
@@ -52,17 +52,17 @@ newMainDiv.removeChild(newLeftDiv);
 
 newCenterContent.style.backgroundColor = 'green';
 
+const listitm = document.getElementsByClassName('list-item');
+const ulway = document.getElementById('unLi');
 
-const rmUl = document.querySelector('.newCul');
-const rmLi = document.querySelector(".list-item")
 
-
-for (let i = 0; i < rmUl.length; i += 1) {
+for (let i = 0; i < listitm.length; i += 1) {
   if (i === 8 || i === 9) {
-    rmUl.removeChild()
+    ulway.removeChild(listitm[i])
   }
-
 }
+
+
 
 
 
