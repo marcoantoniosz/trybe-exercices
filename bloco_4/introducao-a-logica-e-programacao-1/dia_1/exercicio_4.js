@@ -1,8 +1,10 @@
-let status = "outro"
-if (status === "positivo") {
-    console.log("positivo");
-} else if (status === "negativo") {
-    console.log("negativo");
-} else {
-    console.log("zero");
+const estado = (num) => {
+    if (num === 0){
+        return 'zero';
+    } else if (num < 0){
+        return 'negativo';
+    }
+    return 'positivo';
 };
+
+console.log(estado(-12));
