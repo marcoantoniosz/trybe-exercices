@@ -11,7 +11,6 @@ const getOdd = (acc, curr) => ((curr % 2 === 0) ? acc + curr : acc);
 
 const sumn = (array) => array.reduce(getOdd, 0);
 
-console.log(sumn(numbers));
 
 //3
 
@@ -101,5 +100,3 @@ function newArray (arr) {
     }));
     return newArr;
 }
-
-console.log(newArray(estudantes));
